@@ -16,6 +16,12 @@ $ (function() {
             }
             },
             {
+              breakpoint: 1000,
+              settings: {
+                  slidesToShow: 3
+              }
+              },
+            {
               breakpoint: 768,
               settings: {
                 slidesToShow: 2
@@ -24,7 +30,10 @@ $ (function() {
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 1
+                arrows: true,
+                slidesToShow: 1,
+                centerMode: true,
+                variableWidth: true
               }
             }
           ]

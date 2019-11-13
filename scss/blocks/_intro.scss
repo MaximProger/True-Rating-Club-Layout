@@ -124,32 +124,33 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    flex-wrap: wrap;
     margin-top: 15px;
 
     @media (max-width: $tablet) {
         justify-content: flex-start;
-        flex-wrap: wrap;
     }
 
-    @media (max-width: $tablet) {
-        justify-content: flex-start;
-        flex-wrap: wrap;
-    }
 
-    @media (max-width: $mobile) {
-        justify-content: flex-end;
+    // @media (max-width: $tablet) {
+    //     justify-content: flex-start;
+    //     flex-wrap: wrap;
+    // }
 
-        :first-child {
-            flex-direction: column;
-        }
-    }
+    // @media (max-width: $tablet) {
+    //     justify-content: flex-start;
+    //     flex-wrap: wrap;
+    // }
 
-    @media (max-width: $mobile--sm) {
-        flex-direction: column;
-    }
+    
+
+    // @media (max-width: $mobile--sm) {
+    //     flex-direction: column;
+    // }
 
 }
 
 .intro__adress {
     margin-top: 8px;
+
 }

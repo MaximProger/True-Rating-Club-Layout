@@ -90,6 +90,11 @@
         &:focus {
             outline: none;
         }
+
+        @media (max-width: $mobile) {
+            margin-left: 4px;
+            min-width: 100px;
+        }
     }
 
     &--view {
