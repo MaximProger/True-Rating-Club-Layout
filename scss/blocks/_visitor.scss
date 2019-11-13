@@ -1,0 +1,45 @@
+.visitor {
+    width: 25%;
+    padding: 12px 40px 20px 10px;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    height: 547px;
+
+    @media (max-width: $tablet) {
+        width: 35%;
+        padding: 12px 40px 20px 2px;
+    }
+
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}
+
+.visitor__title {
+    font-size: 14px;
+    color: $black;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.visitor__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 8px;
+
+    @media (max-width: $tablet) {
+        img {
+            padding-left: 5px;
+            padding-right: 5px;
+        }
+    }
+
+    :last-child {
+        margin-bottom: 0;
+    }
+}
+
+.visitor__name {
+    color: $bluOlet;
+}

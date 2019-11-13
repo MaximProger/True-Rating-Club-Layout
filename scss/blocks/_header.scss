@@ -1,0 +1,23 @@
+.header {
+    padding: 20px 0;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.header__intro {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.header__brand {
+    font-size: 14px;
+    font-weight: bold;
+
+    img {
+        margin-right: 10px;
+    }
+
+    span {
+        color: $bluOlet;
+    }
+}

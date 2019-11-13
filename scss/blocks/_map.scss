@@ -1,0 +1,40 @@
+.map {
+    width: 64%;
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    padding: 7.5px 12px 12px 12px;
+    height: 547px;
+
+    @media (max-width: $tablet) {
+        width: 100%;
+        height: 268px;
+    }
+
+    @media (max-width: $mobile) {
+        height: auto;
+        order: 2;
+        margin-top: 55px;
+    }
+}
+
+.map__title {
+    font-size: 14px;
+    color: $black;
+    font-weight: bold;
+    margin-bottom: 17px;
+}
+
+.map__body {
+    width: 100%;
+    height: 490px;
+
+    @media (max-width: $tablet) {
+        height: 215px;
+    }
+
+    @media (max-width: $mobile) {
+        height: 232px;
+    }
+
+}
+

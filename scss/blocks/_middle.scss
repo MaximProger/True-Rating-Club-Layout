@@ -1,0 +1,28 @@
+.middle {
+    color: #000;
+    padding: 23px 0;
+}
+
+.middle__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.middle__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 74%;
+
+    @media (max-width: $tablet) {
+        flex-wrap: wrap;
+        width: 64%;
+        height: 547px;
+    }
+
+    @media (max-width: $mobile) {
+        width: 100%;
+        height: auto;
+    }
+}
