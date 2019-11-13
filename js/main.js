@@ -22,7 +22,7 @@ $ (function() {
               }
             },
             {
-              breakpoint: 320,
+              breakpoint: 480,
               settings: {
                 slidesToShow: 1
               }
