@@ -4,6 +4,10 @@
         margin-right: 30px;
     }
 
+    @media (max-width: $mobile--sm) {
+        margin-right: 40px;
+    }
+
     &--toggle {
         width: 23px;
         padding: 10px 0;
@@ -37,7 +41,7 @@
 
                 &::after {
                     transform-origin: left bottom;
-                    transform: rotate(-45deg) translateX(-3px);
+                    transform: rotate(-45deg) translateX(-2px);
                 }
             }
         }
@@ -138,10 +142,10 @@
     }
 
     &::before {
-        top: -8px;
+        top: -7px;
     }
 
     &::after {
-        bottom: -8px;
+        bottom: -5px;
     } 
 }

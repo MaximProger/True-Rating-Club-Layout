@@ -4,7 +4,7 @@
     align-items: center;
     padding: 13px 0;
 
-    @media (max-width: $mobile--sm) {
+    @media (max-width: $mobile) {
         flex-wrap: wrap;
         width: 100%;
     }
@@ -56,12 +56,17 @@
     align-items: center;
     margin-top: 5px;
     margin-left: -50px;
+    text-align: left;
 
     button {
         margin-left: 5px;
     }
 
     @media (max-width: $mobile) {
+        margin-left: -50px;
+    }
+
+    @media (max-width: $mobile--sm) {
         margin-left: 0;
     }
 }
@@ -76,7 +81,7 @@
 .intro__work {
     text-align: right;
 
-    @media (max-width: $mobile--sm) {
+    @media (max-width: $mobile) {
         display: flex;
         text-align: left;
         margin-top: 5px;
@@ -87,14 +92,14 @@
     font-weight: bold;
     margin-bottom: 1px;
 
-    @media (max-width: $mobile--sm) {
+    @media (max-width: $mobile) {
         order: 2;
         margin-bottom: 0;
     }
 }
 
 .intro__work__time {
-    @media (max-width: $mobile--sm) {
+    @media (max-width: $mobile) {
         order: 1;
         margin-right: 5px;
     }
@@ -119,13 +124,30 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    text-align: right;
     margin-top: 15px;
 
-    @media (max-width: $mobile--sm) {
+    @media (max-width: $tablet) {
+        justify-content: flex-start;
         flex-wrap: wrap;
-        width: 100%;
     }
+
+    @media (max-width: $tablet) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+
+    @media (max-width: $mobile) {
+        justify-content: flex-end;
+
+        :first-child {
+            flex-direction: column;
+        }
+    }
+
+    @media (max-width: $mobile--sm) {
+        flex-direction: column;
+    }
+
 }
 
 .intro__adress {
