@@ -113,4 +113,52 @@
             text-decoration: none;
         }
     }
+
+    &--list {
+        color: $bluOlet;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 7px 11px;
+        background-color: #F5F5F7;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color .2s linear, border-color .2s linear;
+
+        &:hover {
+            border-color: $bluOlet;
+            background-color: white;
+            text-decoration: none;
+        }
+
+        &.deactive {
+            display: none;
+        }
+    }
+
+    &--hide {
+        display: none;
+        color: white;
+        font-size: 12px;
+        font-weight: bold;
+        padding: 7px 11px;
+        background-color: $gray;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: border-color .2s linear, color .2s linear, background-color .2s linear;
+
+        &:hover {
+            color: white;
+            border-color: darken($color: $gray, $amount: 10%);
+            background-color: darken($color: $gray, $amount: 5%);
+            text-decoration: none;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+
+    &--sm {
+        min-width: 90px;
+    }
   }

@@ -111,13 +111,18 @@
 
 .intro__sub__slider {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 2px;
+    overflow: hidden;
+
 
     @media (max-width: $mobile) {
         display: none;
     }
+}
+
+.slider__sub__img {
+    margin-right: 3px;
 }
 
 .intro__contact {

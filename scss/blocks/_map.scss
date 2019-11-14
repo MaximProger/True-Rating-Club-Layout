@@ -15,7 +15,14 @@
         order: 2;
         margin-top: 55px;
     }
-}
+
+    &--list {
+        @media (max-width: $tablet) {
+            display: none;
+            }
+        }
+    }
+
 
 .map__title {
     font-size: 14px;

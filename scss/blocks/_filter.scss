@@ -1,0 +1,72 @@
+.filter {
+    padding-top: 10px;
+
+    @media (max-width: $tablet) {
+        display: flex;
+    }
+}
+
+.filter__wrapper {
+    margin-right: 40px;
+}
+
+.filter__item {
+    margin-bottom: 15px;
+
+    :last-child {
+        margin-bottom: 0;
+    }
+
+    @media (max-width: $tablet) {
+        &.hidden {
+            display: none;
+        } 
+    }
+}
+
+.filter__title {
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+.filter__line {
+    display: flex;
+    align-items: center;
+
+    &.active {
+    .filter__img {
+        background-color: $bluOlet;
+        border-radius: 50%;
+  }
+ }
+}
+
+
+
+.filter__link {
+    color: $bluOlet;
+    margin-left: 6px;
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

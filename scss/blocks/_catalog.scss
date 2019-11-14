@@ -1,0 +1,151 @@
+.catalog__item {
+    border: 1px solid #EEEEEE;
+    border-radius: 4px;
+    padding: 10px;
+    width: 100%;
+    height: 267px;
+    margin-bottom: 10px;
+
+    @media (max-width: $tablet) {
+        height: auto;
+        border: none;
+        border-radius: 0px;
+        margin-bottom: 0;
+    }
+}
+
+.catalog__head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+
+    .intro__info__head {
+        @media (max-width: $mobile--sm) {
+            flex-wrap: wrap;
+        }
+    }
+
+    .intro__info__title {
+        @media (max-width: $mobile--sm) {
+            width: 100%;
+        }
+    }
+
+    .intro__info__subtitle{
+        &--1, 
+        &--2 {
+            margin-left: 50px;
+
+            @media (max-width: $mobile--sm) {
+                margin-left: 0;
+            }
+        }
+    } 
+
+    @media (max-width: $mobile) {
+        flex-wrap: wrap;
+    }
+}
+
+.catalog__body {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12px;
+    overflow: hidden;
+
+    img {
+        display: inline-block;
+        margin: 0 2.5px;
+    }
+}
+
+.catalog__visitors {
+    display: flex;
+    align-items: center;
+
+    .visitor__item {
+        margin-left: 10px;
+
+        img {
+            margin: 0 3.5px;
+        }
+    }
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.catalog__contact {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 22px;
+
+    @media (max-width: $tablet) {
+        display: none;
+    }
+}
+
+.catalog__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 7px;
+    margin-bottom: 35px;
+
+    @media (max-width: $tablet) {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+}
+
+.catalog__nav__inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a {
+        display: inline-block;
+        margin-right: 10px;
+        text-decoration: none;
+        color: $bluOlet;
+        padding: 2px 6px;
+
+        @media (max-width: $mobile--sm) {
+            margin-right: 5px;
+        }
+        
+    }
+
+    @media (max-width: $mobile) {
+        width: 100%;
+    }
+}
+
+.catalog__nav__number {
+    border: 1px solid #fff;
+
+    &:hover,
+    &.active {
+        border-color: #041039;
+        box-sizing: border-box;
+        border-radius: 2px;
+    }
+}
+
+.catalog__nav__dots {
+    margin-left: 23px;
+    margin-right: 23px;
+
+    @media (max-width: $mobile--sm) {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+.catalog__nav__info {
+    @media (max-width: $mobile) {
+        display: none;
+    }
+}

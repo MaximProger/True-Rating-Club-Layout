@@ -23,6 +23,11 @@ body {
   p {
     margin: 0;
   }
+
+  .hide {
+    display: none;
+  }
+
 //   Blocks
 // @import 'blocks/container';
 @import 'blocks/nav';
@@ -35,3 +40,8 @@ body {
 @import 'blocks/map';
 @import 'blocks/stat';
 @import 'blocks/footer';
+
+// Style for list.html
+@import 'blocks/list';
+@import 'blocks/filter';
+@import 'blocks/catalog';
