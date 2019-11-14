@@ -6,18 +6,12 @@ $ (function() {
     // Slider
     $('#intro__slider').slick({
         arrows: false,
-        slidesToShow: 5,
+        slidesToShow: 4,
         slidesToScroll: 1,
         infinite: true,
         autoplay: true,
         autoplaySpeed: 2000,
         responsive: [
-            {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 4
-            }
-            },
             {
               breakpoint: 1000,
               settings: {

@@ -40,6 +40,13 @@
     }
 }
 
+.visitor__logo {
+    &--list {
+        width: 22px;
+        height: 22px;
+    }
+} 
+
 .visitor__name {
     display: inline-block;
     color: $bluOlet;

@@ -8,6 +8,8 @@
     border: 1px solid transparent;
     border-radius: 4px;
 
+    transition: color .2s linear, border-color .2s linear, background-color .2s linear;
+
     &:hover {
         border-color: $black;
     }
@@ -15,16 +17,34 @@
     &--orange {
         background-color: #fdefc7;
         color: #EB9D06;
+
+        &:hover {
+            color: white;
+            background-color: #EB9D06;
+            border-color: #EB9D06;
+        }
     }
 
     &--simple {
         background-color: #e6e6e6;
         color: $black;
+
+        &:hover {
+            color: white;
+            background-color: $black;
+            border-color: $black;
+        }
     }
 
     &--red {
         background-color: #f8dede;
         color: #CE2323;
+
+        &:hover {
+            color: white;
+            background-color: #CE2323;
+            border-color: #CE2323;
+        }
 
     }
 
@@ -111,6 +131,14 @@
             border-color: $bluOlet;
             background-color: white;
             text-decoration: none;
+        }
+    }
+
+    &--view {
+        &:hover {
+            color: white;
+            background-color: $bluOlet;
+            border-color: $bluOlet;
         }
     }
 

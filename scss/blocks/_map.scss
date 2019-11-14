@@ -23,6 +23,13 @@
         .mybtn {
             margin-top: 35px;
             margin-left: 10px;
+            transition: opacity .2s linear;
+            &:hover {
+                opacity: 1;
+                color: white;
+                background-color: $bluOlet;
+                border-color: $bluOlet;
+            }
         }
         @media (max-width: $tablet) {
             display: none;
