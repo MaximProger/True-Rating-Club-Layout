@@ -36,12 +36,12 @@
 
                 &::before {
                     transform-origin: left top;
-                    transform: rotate(45deg) translateX(-2px);
+                    transform: rotate(45deg) translateX(0px);
                 }
 
                 &::after {
                     transform-origin: left bottom;
-                    transform: rotate(-45deg) translateX(-2px);
+                    transform: rotate(-45deg) translateX(-1px);
                 }
             }
         }
@@ -118,7 +118,7 @@
 .nav--toggle__item {
     display: block;
     width: 100%;
-    height: 3px;
+    height: 2px;
     background-color: $bluOlet;
     position: absolute;
     top: 0;
@@ -142,10 +142,10 @@
     }
 
     &::before {
-        top: -7px;
+        top: -8px;
     }
 
     &::after {
-        bottom: -5px;
+        bottom: -8px;
     } 
 }

@@ -102,8 +102,7 @@ $ (function() {
             event.preventDefault();
             
             let cat = $(this).data('filter');
-
-            // $('.filter__img').toggleClass('active');
+            $(this).toggleClass('active');
 
             if (cat == 'all') {
                 $('[data-cat]').removeClass('hide');
@@ -123,8 +122,5 @@ $ (function() {
                 });
             }
         });
-
-      
-
 });
 
