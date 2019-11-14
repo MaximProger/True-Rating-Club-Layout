@@ -1,6 +1,15 @@
 .header {
     padding: 20px 0;
     border-bottom: 1px solid #EEEEEE;
+
+    &--bigmap {
+        background-color: #fff;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
 }
 
 .header__intro {

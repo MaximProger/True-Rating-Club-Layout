@@ -122,5 +122,26 @@ $ (function() {
                 });
             }
         });
+
+        // bigmap.html
+
+        // Close item
+
+        $(".bigmap__close").on("click", function(event) {
+          event.preventDefault();
+
+          $(".bigmap__item").addClass("hide");
+
+        });
+
+
+        // More link 
+
+        $(".more").on("click", function(event) {
+          event.preventDefault();
+
+          $(".more__img").toggleClass("active");
+
+        });
 });
 

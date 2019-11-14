@@ -29,6 +29,16 @@
         margin-top: 0;
         margin-bottom: 10px;
     }
+
+    &--bigmap {
+        background-color: #fff;
+        position: absolute;
+        padding: 0 10px 10px;
+        top: 73px;
+        left: 0;
+        right: 0;
+        z-index: 1000;
+    }
 }
 
 .list__tab__right {

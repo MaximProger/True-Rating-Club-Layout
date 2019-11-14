@@ -161,4 +161,20 @@
     &--sm {
         min-width: 90px;
     }
+
+    &--violet {
+        color: white;
+        background-color: $bluOlet;
+        opacity: .9;
+
+        &:hover {
+            opacity: 1;
+            background-color: white;
+            color: $bluOlet;
+        }
+
+        @media (max-width: $tablet) {
+            right: 80px;
+        }
+    }
   }
