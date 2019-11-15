@@ -15,8 +15,12 @@
     .mybtn--violet {
         position: absolute;
         right: 150px;
-        top: 130px;
+        top: 110px;
         transition: opacity .2s linear;
+
+        @media (max-width: $tablet) {
+            top: 130px;
+        }
 
         &:hover {
             opacity: 1;
@@ -29,7 +33,7 @@
 
 .bigmap__filter {
     position: absolute;
-    top: 125px;
+    top: 105px;
     left: 100px;
     background-color: white;
     width: 151px;

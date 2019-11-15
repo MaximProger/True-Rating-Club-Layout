@@ -57,17 +57,18 @@
 
 .list__inner {
     display: flex;
-    justify-content: space-between;
+    justify-content: left;
     align-items: flex-start;
     position: relative;
 }
 
 .list__column {
-    width: 19.5%;
+    margin-right: 30px;
 
     @media (max-width: $tablet) {
         display: none;
         position: absolute;
+        margin-right: 0;
         width: 100%;
         background-color: white;
         top: 1px;
@@ -81,7 +82,7 @@
 }   
 
 .list__main {
-    width: 82%;
+    width: 74%;
 
     @media (max-width: $tablet) {
         width: 100%;
